@@ -1,0 +1,28 @@
+body {
+    background-color: rgba(34, 88, 173, 0.766);
+}
+video {
+    aspect-ratio: 20/10;
+    width: 80%;
+    margin: 4vw 10vw;
+}
+img {
+    width: 5cqmin;
+    height: 5cqmin;
+}
+
+a {
+float: right;
+text-decoration: none;
+aspect-ratio: 1/1;
+position: absolute;
+margin-left: 1vw;
+margin-top: 1vw;
+}
+a:hover {
+transition-duration: .5s;
+color: pink;
+}
+a:active {
+transform: scale(.90);
+}

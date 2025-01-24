@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Millie's Hut</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="../pics/logo.png">
+    
+</head>
+<style>
+    :root {
+        --border-color: rgb(60, 102, 228);
+    }
+    .buttonstyle { 
+        height: 3vw;
+        width: 3vw;
+        float: right;
+        background-color: rgb(93, 123, 204);
+        border-color: var(--border-color);
+        margin: 30vw 0vw 0vw 1vw;
+    }
+    .buttonstyle:hover {
+        transition-duration: 0.5s;
+        background-color: rgb(80, 108, 185);
+    }
+    .icons {
+        width:100%;
+    }
+    .audiThumb{
+        width: 15vw;
+        margin: 2vw 5vw;
+        aspect-ratio: 1/1;      
+        position: absolute;
+    }
+    .audio {
+        float: left;
+        width: 25vw;
+        height: 35vw;
+        margin: 6vw 17vw;
+        box-shadow: 0vw 0vw 1vw 0vw rgb(133, 162, 255);
+    }
+    .titleAudio {
+        font-size: 3vw;
+        float: left;
+        position: absolute;
+        margin: 20vw 8vw;
+        font-weight: bold;
+        
+    }
+    .authorAudio {
+        font-size: 1vw;
+        float: left;
+        position: absolute;
+        margin: 24vw 9vw;
+        text-align: center;
+    }
+    .date {
+        font-size: 1vw;
+        float: left;
+        position: absolute;
+        margin: 26vw 7vw;
+        text-align: center;
+    }
+    .last {
+        margin-right: 3vw;
+    }
+    .first {
+        margin-left: 38cqmin;
+    }
+    .middle {
+        margin-left: 1vw;
+        margin-right: -5vw;
+    }
+    .kanonsong {
+        background-color: rgb(232, 164, 28);
+    }
+    .identitysong {
+        background-color: rgb(170, 6, 6);
+    }
+    .identityt {
+        margin-left: 6.5vw;
+    }
+    .akosong {
+        background-color: rgba(255, 255, 255, 0.746);
+    }
+    .akot {
+        margin-left: 0.7vw;
+    }
+    .suffersong {
+        background-color: rgba(255, 244, 197, 0.746);
+    }
+    .suffeirngt {
+        margin-left: 2vw;
+    }
+    .forgottensong {
+        background-color: rgba(191, 73, 18, 0.746);
+    }
+    .forgott {
+        margin-left: 2vw;
+    }
+</style>
+<body>
+    
+    <div class="navigation">
+        <img class="logo" src="../pics/logo.png" alt="logonimil">
+            <p class="title">Millie's Witch Hut</p>
+
+            <nav>
+                <a class="options" href="Audio.html">Audio</a>
+                <a class="options" href="Video.html">Video</a>
+                <a class="options" href="About.html">About</a>
+                <a class="options" href="../Index.html">Home</a>
+            </nav>
+    </div>
+
+    <div class="first audio kanonsong">
+        
+        <audio id = "Kanon" autoplay>
+            <source src = "../audio/Kanon.mp3" type = "audio/ogg" >
+        </audio>
+        
+        <button class="buttonstyle last" onclick="IncreaseVolA()" type="button"> <img class="icons" src="../pics/audio icon/increase.png" alt="icons"> </button>
+        <button class="buttonstyle" onclick="DecreaseVolA()" type="button"> <img class="icons" src="../pics/audio icon/decrease.png" alt="icons"> </button>
+	    <button class="buttonstyle" onclick = "stopaudioa()" type = "button" > <img class="icons" src="../pics/audio icon/stop.png" alt="icons"> </button>
+	    <button class="buttonstyle" onclick = "pauseaudioa()" type = "button" > <img class="icons" src="../pics/audio icon/pause.png" alt="icons"> </button>
+        <button class="buttonstyle" onclick = "playaudioa()" type = "button" > <img class="icons" src="../pics/audio icon/play.png" alt="icons"> </button>
+        
+        <h1 class="titleAudio">Kanon</h1>
+        <p class="authorAudio">Millie Partfait</p>
+        <p class="date">Premiered Jan 31, 2022</p>
+        <img class="audiThumb" src="../pics/audio thumbnails/kanon.png" alt="kanon">
+        
+    </div>
+
+    <div class=" audio identitysong">
+        
+        <audio id = "identity" autoplay>
+            <source src = "../audio/identity.mp3" type = "audio/ogg" >
+        </audio>
+        
+        <button class="buttonstyle last" onclick="IncreaseVolb()" type="button"> <img class="icons" src="../pics/audio icon/increase.png" alt="icons"> </button>
+        <button class="buttonstyle" onclick="DecreaseVolb()" type="button"> <img class="icons" src="../pics/audio icon/decrease.png" alt="icons"> </button>
+	    <button class="buttonstyle" onclick = "stopaudiob()" type = "button" > <img class="icons" src="../pics/audio icon/stop.png" alt="icons"> </button>
+	    <button class="buttonstyle" onclick = "pauseaudiob()" type = "button" > <img class="icons" src="../pics/audio icon/pause.png" alt="icons"> </button>
+        <button class="buttonstyle" onclick = "playaudiob()" type = "button" > <img class="icons" src="../pics/audio icon/play.png" alt="icons"> </button>
+        
+        <h1 class="titleAudio identityt">Identity</h1>
+        <p class="authorAudio">Millie Partfait</p>
+        <p class="date">Premiered Jan 31, 2022</p>
+        <img class="audiThumb" src="../pics/audio thumbnails/identity.png" alt="kanon">
+        
+    </div>
+
+    <div class="middle audio akosong">
+        
+        <audio id = "ako" autoplay>
+            <source src = "../audio/akonlng.mp3" type = "audio/ogg" >
+        </audio>
+        
+        <button class="buttonstyle last" onclick="IncreaseVolc()" type="button"> <img class="icons" src="../pics/audio icon/increase.png" alt="icons"> </button>
+        <button class="buttonstyle" onclick="DecreaseVolc()" type="button"> <img class="icons" src="../pics/audio icon/decrease.png" alt="icons"> </button>
+	    <button class="buttonstyle" onclick = "stopaudioc()" type = "button" > <img class="icons" src="../pics/audio icon/stop.png" alt="icons"> </button>
+	    <button class="buttonstyle" onclick = "pauseaudioc()" type = "button" > <img class="icons" src="../pics/audio icon/pause.png" alt="icons"> </button>
+        <button class="buttonstyle" onclick = "playaudioc()" type = "button" > <img class="icons" src="../pics/audio icon/play.png" alt="icons"> </button>
+        
+        <h1 class="titleAudio akot">Sana Ako Nalang</h1>
+        <p class="authorAudio">Millie Partfait</p>
+        <p class="date">Premiered Jun 3, 2022</p>
+        <img class="audiThumb" src="../pics/audio thumbnails/ako.png" alt="kanon">
+        
+    </div>
+
+    <div class=" audio suffersong">
+        
+        <audio id = "suffer" autoplay>
+            <source src = "../audio/suffering girl.mp3" type = "audio/ogg" >
+        </audio>
+        
+        <button class="buttonstyle last" onclick="IncreaseVold()" type="button"> <img class="icons" src="../pics/audio icon/increase.png" alt="icons"> </button>
+        <button class="buttonstyle" onclick="DecreaseVold()" type="button"> <img class="icons" src="../pics/audio icon/decrease.png" alt="icons"> </button>
+	    <button class="buttonstyle" onclick = "stopaudiod()" type = "button" > <img class="icons" src="../pics/audio icon/stop.png" alt="icons"> </button>
+	    <button class="buttonstyle" onclick = "pauseaudiod()" type = "button" > <img class="icons" src="../pics/audio icon/pause.png" alt="icons"> </button>
+        <button class="buttonstyle" onclick = "playaudiod()" type = "button" > <img class="icons" src="../pics/audio icon/play.png" alt="icons"> </button>
+        
+        <h1 class="titleAudio suffeirngt">Suffering Girl</h1>
+        <p class="authorAudio">Millie Partfait</p>
+        <p class="date">Premiered Oct 13, 2021</p>
+        <img class="audiThumb" src="../pics/audio thumbnails/suffering.png" alt="kanon">
+        
+    </div>
+
+    <div class="middle audio forgottensong">
+        
+        <audio id = "forgottenGirl" autoplay>
+            <source src = "../audio/forgottenGirl.mp3" type = "audio/ogg" >
+        </audio>
+        
+        <button class="buttonstyle last" onclick="IncreaseVole()" type="button"> <img class="icons" src="../pics/audio icon/increase.png" alt="icons"> </button>
+        <button class="buttonstyle" onclick="DecreaseVole()" type="button"> <img class="icons" src="../pics/audio icon/decrease.png" alt="icons"> </button>
+	    <button class="buttonstyle" onclick = "stopaudioe()" type = "button" > <img class="icons" src="../pics/audio icon/stop.png" alt="icons"> </button>
+	    <button class="buttonstyle" onclick = "pauseaudioe()" type = "button" > <img class="icons" src="../pics/audio icon/pause.png" alt="icons"> </button>
+        <button class="buttonstyle" onclick = "playaudioe()" type = "button" > <img class="icons" src="../pics/audio icon/play.png" alt="icons"> </button>
+        
+        <h1 class="titleAudio forgott">Forgotten Girl</h1>
+        <p class="authorAudio">Millie Partfait</p>
+        <p class="date">Premiered Oct 13, 2021</p>
+        <img class="audiThumb" src="../pics/audio thumbnails/forgotten.png" alt="kanon">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

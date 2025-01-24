@@ -1,0 +1,94 @@
+body {
+    margin: 0cqmin;
+    padding: 0cqmin;
+    background-color: rgba(25, 51, 137, 0.777);
+    /* background-image: url(milPar.png);
+    background-size: 100% 100%; */
+    font-family: var(--Main-FontText);
+    color: var(--main-FontColor);
+}
+a {
+    float: right;
+    text-decoration: none;
+    color: var(--main-FontColor);
+    font-family: var(--Main-FontText);
+    font-size: 3cqmin;
+    margin-top: 3.5cqmin;
+    margin-right: 3cqmin;
+}
+a:hover {
+    transition-duration: .5s;
+    color: pink;
+}
+a:active {
+    transform: scale(.90);
+}
+@font-face {
+    font-family: "cheri";
+    src: url(../font/CHERI___.TTF);
+}
+:root {
+    --Main-FontText: cheri; 
+    --main-FontColor: whitesmoke;
+    --stroke-Color: black;
+}
+
+.banner {
+    aspect-ratio: 19.1/10;
+    width: 100%;
+    position: relative;
+    opacity: 75%;
+    margin-top:  -12cqmin;
+    z-index: -1;
+}
+.navigation {
+    height: 9cqmin;
+    background-color: rgba(34, 34, 118, 0.412);
+}
+.logo {
+    float: left;
+    margin-top: 2cqmin;
+    margin-left: 2cqmin;
+    height: 6cqmin;
+    aspect-ratio: 1.5/1;
+}
+.milcat{
+    position: relative;
+    float: right;
+    width: 15cqmin;
+    z-index: 1cqmin;
+    margin-right: 8cqmin;
+    margin-top: -30cqmin;
+    rotate: 20deg;
+}
+.title {
+    float: left;
+    color: var(--main-FontColor);
+    font-family: var(--Main-FontText);
+    font-size: 3cqmin;
+    margin-top: 2.5cqmin;
+}
+.BigTitleText {
+    font-family: var(--Main-FontText);
+    position: absolute;
+    margin-left: 10cqmin;
+    font-size: 7cqmax;
+    margin-top: 8cqmin;
+    color: var(--main-FontColor);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .2cqmin;
+}
+.Small-TitleText{
+    font-family: var(--Main-FontText);
+    position: absolute;
+    margin-left: 10cqmax;
+    margin-top: 15cqmax;
+    font-size: 4cqmax;
+    color: var(--main-FontColor);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .15cqmin;
+}
+
+.options {
+    margin-right: 5vw;
+}
